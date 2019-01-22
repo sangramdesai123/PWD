@@ -22,7 +22,7 @@ header{
 }
 .card{
 	width: 100%;
-	max-width: 320px;
+	max-width: 240px;
 	margin: 0 auto;
 	margin-top: 100px;
 	min-height: 200px;
