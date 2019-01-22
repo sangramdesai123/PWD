@@ -48,7 +48,16 @@ header{
 }
 .card_desc{
 	align-self: center;
-	padding: 12px 15px;
+}
+.card_btn{
+	align-self: center;
+	border: none;
+	width: auto;
+	height: 30px;
+	color: white;
+	background-color: #008080;
+	border: solid 1px #008080;
+	border-radius:10px;
 }
 
 
