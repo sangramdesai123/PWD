@@ -4,8 +4,7 @@
 	<title>PWA</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="canonical" href="https://sangramdesai123.github.io/FirstPrivate/" />
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
 <header>
@@ -15,8 +14,18 @@
 	<img src="./sangram.jpg" alt="profile pic">
 	<p class="card_title">Sangram Desai</p>
 	<p class="card_desc">Designer adsd asdfbhsdf</p>
+	<p><input type="button" onclick="chBackcolor();">Change</p>
 </div>
+<script type="text/javascript">
+	var c=0;
+var a=["red","black","pink"];
+function chBackcolor() {
+	c=(c+1)%3;
+	alert(c);
+   document.body.style.background = a[c];
+}
 
+</script>
 <script>
 if('serviceWorker' in  navigator){
 	navigator.serviceWorker.register('./sw.js')
