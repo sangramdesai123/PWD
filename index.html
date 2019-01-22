@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PWA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<header>
+	<span class="header_title">Progressive wen Application</span>
+</header>
+<div class="card">
+	<img src="./sangram.jpg" alt="profile pic">
+	<p class="card_title">Sangram Desai</p>
+	<p class="card_desc">Designer adsd asdfbhsdf</p>
+</div>
+
+<script>
+if('serviceWorker' in  navigator){
+	navigator.serviceWorker.register('./sw.js')
+	.then(res=>{
+		console.info("SW Register");
+	})
+	.catch(err=>{
+		console.error("Error in SW",err);
+	})
+}
+else{
+	console.log("Not spported");
+}
+</script>
+</body>
+</html>
